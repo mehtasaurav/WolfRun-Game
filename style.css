@@ -1,0 +1,134 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{	
+	overflow:hidden;
+}
+
+.gameContainer{
+	background-image: url(./resource2/background.jpg);
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	/*Container Width and Height */
+	width:100vw;
+	height:100vh;
+}
+
+.mainChar{
+	background-image: url(./resource2/boy.gif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:1000px;
+	height:800px;
+	position:absolute;
+	bottom:20%;
+}
+
+.obstacle{
+	background-image: url(./resource2/monster.gif);
+	background-size: contain;
+    width: 1300px;
+    height: 700px;
+	position:absolute;
+	bottom: 20%;
+	left: 45vw;
+}
+
+.animateMainChar{
+	 animation: mainChar 1s ease-in-out infinite;
+}
+
+@keyframes mainChar {
+	0% {
+		bottom: 20%;
+	}
+	30% {
+		bottom: 60%;
+	}
+	50% {
+		bottom: 65%;
+	}
+	60% {
+		bottom: 65%;
+	}
+	70% {
+		bottom: 65%;
+	}
+	80% {
+		bottom: 65%;
+	}
+	90% {
+		bottom: 20%;
+	}
+	100% {
+		bottom: 20%;
+	}
+}
+
+.obsticleAni{
+	animation:obsticleAnimation 5s linear infinite;
+}
+
+@keyFrames obsticleAnimation{
+	0%{
+		left:100vw;
+	}
+	100%{
+		left:-10vw;
+	}
+
+} 
+
+#scoreCount{
+    width: 50%;
+    height: 8%;
+    margin: auto;
+    text-align: center;
+    font-size: 200px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: math;
+	border-style: inset;
+}
+
+.infoBoard{
+    width: 45%;
+    height: 27%;
+    margin: auto;
+    text-align: center;
+    font-size: 169px;
+    font-weight: bold;
+    color: #000000;
+    font-family: math;
+    background-color: #f4fbf4;
+    border-radius: 119px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex
+;
+    border-style: dashed;
+	visibility:hidden;
+}
+
+.info{
+    position: absolute;
+    margin-top: 2%;
+}
+
+.animateGameOver{
+	animation:gameOverAnimation 2s forwards;
+}
+
+@keyFrames gameOverAnimation{
+	0%{
+		opacity:0;
+		visibility:hidden;
+	}
+	100%{
+		opacity:1;
+		visibility:visible;
+	}
+}

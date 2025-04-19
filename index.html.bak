@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Play Temple Run Like game">
+		<meta name="keywords" content="Running game">
+		<meta name="author" content="saurav">
+		<title> Gud Game </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favicon.css">
+		<script src="script.js"> </script>
+	</head>
+	<body>
+		<div class="gameContainer">
+			<div id="scoreCount">Your Score: 0</div>
+						<div class="infoBoard">
+				<div class="info">
+					<h2 class="gameOver">Game Over!!</h2>
+					<h2 class="score">Score:</h2>
+				</div>
+			</div>
+			<div class="mainChar"> </div><em></em>
+			<div class="obstacle obsticleAni"></div>
+		</div>
+
+		
+	</body>
+</html>
